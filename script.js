@@ -20,7 +20,7 @@ function GenerateUUID() { // By Asaki Yuki
 
 let packIcon
 
-fetch("./pack_icon.png")
+fetch("/pack_icon.png")
   .then(response => response.blob())
   .then(blob => { packIcon = blob })
   .catch(error => { console.error(error) });
