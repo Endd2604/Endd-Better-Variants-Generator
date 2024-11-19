@@ -5,7 +5,7 @@ statusText.textContent = "This is text write by JavaScript!";
 // Base Function
 //---
 
-function clickSound() { new Audio("./snd/release-7c974.ogg").play(); }
+function clickSound() { new Audio("/snd/release-7c974.ogg").play(); }
 function elementID(id) { return document.getElementById(id); }
 function getRadioValue(name) { return document.querySelector(`input[name=${name}]:checked`).value; }
 function generateRandomName(length) { // By Asaki Yuki ;P
@@ -21,7 +21,7 @@ function GenerateUUID() { // By Asaki Yuki
 
 let packIcon
 
-fetch("./pack_icon.png")
+fetch("/pack_icon.png")
   .then(response => response.blob())
   .then(blob => { packIcon = blob })
   .catch(error => { console.error(error) });
