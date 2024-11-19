@@ -2,9 +2,11 @@
 // Base Function
 //---
 
-function clickSound() { new Audio("./snd/release-7c974.ogg").play(); }
+function clickSound() { new Audio("/snd/release-7c974.ogg").play(); }
 function elementID(id) { return document.getElementById(id); }
-function getRadioValue(name) { return document.querySelector(`input[name=${name}]:checked`).value; }
+function getRadioValue(name) { 
+  return document.querySelector(`input[name="${name}"]:checked`).value; 
+}
 function generateRandomName(length) { // By Asaki Yuki ;P
     return Array.from({ length }, v => Math.floor(Math.random() * 16).toString(16)).join('');
 }
