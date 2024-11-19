@@ -1,6 +1,3 @@
-const statusText = document.getElementById('status');
-statusText.textContent = "This is text write by JavaScript!";
-
 //---
 // Base Function
 //---
